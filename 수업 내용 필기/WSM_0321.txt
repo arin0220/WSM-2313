@@ -1,0 +1,31 @@
+새 파일이 초록색이면 아직 깃에 저장 안된거
+와 tab 3번 누르면 타이틀
+또 tab 누르면 body
+
+<!DOCTYPE html>
+밑에 글을 html5니까 그거에 맞는 해석을 해라 라는 뜻
+
+head
+title 페이지 제목
+meta 밑에 페이지 정보 설명, 해석 방법 등등
+
+와 ctrl + enter 하면 줄 바뀌네 올
+
+<ul> : unorderde list
+<li> : list item
+<ol> : ?
+
+단축어 emmet
+ul>li*5 뭐 이런거
+
+<h1> >> <h6>
+
+src 내 이미지의 원천이 어디냐~
+alt 이미지 안나올때
+
+input 
+-text
+-password
+-checkbox
+-radio
+-submit
