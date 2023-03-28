@@ -28,7 +28,7 @@ selector:first-child()  = selector 요소 중 첫번째
 selector:nth-child(n)   = 형제 요소 중에서 특정 순서(n)에 있는 요소를 선택할 때 사용
 selector:hover          = 요소의 마우스가 올라가는 동안 selector를 선택
 
-[속성="값"]     <TAG 속성 = "값">인 모든 요소 선택
+[속성="값"]     <...TAG 속성 = "값">인 모든 요소 선택
 
 </pre>
 # 우선순위
@@ -36,6 +36,6 @@ selector:hover          = 요소의 마우스가 올라가는 동안 selector를
 2. #id
 3. .class
 4. TAG
-5. *
+5. \*
 - 구체 > 포괄
-6. 같은 우선순위일 때, 나중에 쓴 것이 적용
+- 같은 우선순위일 때, 나중에 쓴 것이 적용
