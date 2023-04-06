@@ -1,0 +1,26 @@
+ul
+unordered list 순서 없는 리스트
+
+파일 전환 ctrl + tab 매우 좋다👍
+
+font - color XX 	color		00
+    size    XX	font-size	00
+li:nth-child(5)
+li 자체의 형재 자매 중 5번째 
+
+odd 홀수 even(2n) 짝수
+
+h5 ~ h6 이면 h6만 적용된다
+
+input type 는 [type="text"] {} 로 적용한다 "[]"사용 but 자주 사용 안함 그냥
+이런 문법이 있구나 정도
+
+ul:nth-child(2)
+ul 중 두번째 를 찾는 것이 아니라
+전체적인 틀 안에서 두번째 를 찾는 것이다
+태그가 달라도? 두번째 인걸 찾는 것
+
+웹사이트 에서 검사 눌러서 코드에서 
+오른쪽 버튼 copy > selector copy 하면 위치 지목 가능
+
+개발자 도구에서 색상 변경 가능 	ㅋ

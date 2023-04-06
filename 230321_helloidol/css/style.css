@@ -14,3 +14,39 @@ h1,
 h2{
   background-color: plum;
 }
+h5 ~ h6,
+ol,
+ul {
+  color: #333;
+  font-size: 32px;
+}
+.korea {
+  color: skyblue;
+}
+.japan {
+  color: crimson;
+}
+.incheon {
+  color: darkblue;
+}
+.leader {
+  color: purple;
+}
+li:nth-child(5) {
+  text-decoration: underline;
+}
+li:nth-child(even) { /* even , 2n : 짝수 ||  odd : 홀수 */
+  background-color: #eee;
+}
+li:nth-child(5n) {
+  background-color: #aaa;
+}
+[type="text"] {
+  background-color: aqua;
+}
+ul:nth-child(3) > li:nth-child(2):hover {
+  text-decoration: overline;
+}
+ul:nth-child(3) > li.japan {
+  font-size: 8px;
+}
