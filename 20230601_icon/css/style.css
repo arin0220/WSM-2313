@@ -1,0 +1,20 @@
+.bi-list{
+    color: dodgerblue;
+    font-size: 2rem;
+}
+
+/* desktop */
+/* 최대 너비가 720px 일 때, 720px 보다 작을때 적용 */
+@media screen and (max-width: 720px) {
+    body {
+        background-color: palevioletred;
+    }
+    
+}
+/* mobile */
+/* 최대 너비가 548px 일 때, 적용 즉, 548px 보다 작을 때  */
+@media screen and (max-width: 548px) {
+    body {
+        background-color: deeppink;
+    }
+}
