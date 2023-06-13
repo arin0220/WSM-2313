@@ -1,7 +1,10 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hahmlet:wght@200;400;700&display=swap");
+
 /* Variales CSS */
 :root{
     --first-color: #008156;
-    --second-color:#efb11C;
+    --second-color:#efb11c;
     --body-color: #fff;
 
     /* font */
@@ -18,9 +21,8 @@
 
 } 
 
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hahmlet:wght@200;400;700&display=swap");
 body{
-    font-size: var(--body-font);
+    font-size: var(--body-font);  /*폰트 */
     font-size: var(--normal-font-size);
     color: #000;
 
@@ -29,8 +31,8 @@ header {
     background-color: var(--first-color);
     position: fixed;    /*스크롤 해도 항상 위치 고정하자*/
     top: 0;
-    left: 0;
-    right: 0;
+    left: 0;    /*오른쪽 끝가지*/
+    right: 0;   /*왼쪽 끝가지 늘리기*/
 }
 nav {
     height: 44px;
@@ -39,7 +41,7 @@ nav {
     display: flex;  /* 기본값 : 수평정렬*/
     justify-content: space-between;
     align-items: center;    /*교차측 가운데 맞춤*/
-    padding: 0 16px;
+    padding: 0 16px;    /*위아래:0 / 양옆 : 16px*/
     color: #fff;
 }
 .nav.container a {
@@ -49,11 +51,58 @@ nav {
     font-size: var(--h2-font-size);
 }
 .nav-list {
-    display: flex;
+    display: flex;  /*수평 배치*/
     column-gap: 80px;
     font-weight: var(--font-bold);
 }
 .nav-toggle {
     font-size: var(--h2-font-size);
     visibility: hidden;
+}
+
+/* tablet */
+@media screen and (max-width:720px) {
+
+    
+}
+
+/* mobile */
+@media screen and (max-width:548px) {
+    /* .nav-logo 가운데로 */
+    .nav-logo{
+        margin: 0 auto;
+    }
+    /* .nav-list 아래로, 안보이게 */
+    .nav-list{
+        position: absolute;
+        top: 44px;
+        right: 0;   /*오른쪽 끝까지*/
+        left: 0;    /*왼쪽 끝가지*/
+
+        flex-direction: column; /*.nav-item 수직 배열*/
+        text-align: center; /*글자 가운데 정렬*/
+        background-color: rgba(239, 177, 28, 0.4);
+        backdrop-filter: blur(4px);
+        height: 0; /*처음에 안보이게*/
+    }
+    .nav-item {
+        padding: 1em 0;
+        border-bottom: 2px solid #fff;
+    }
+    .nav-link{
+        display: block; /*링크를 양옆으로 넓게*/
+    }
+    /* .nav-toggle 보이게 */
+    .nav-toggle{
+        visibility: visible;
+        position: absolute; /*햄버거 메뉴 공간을 차지하지 않게 .nav-logo를 가운데 웅앵웅*/
+        right: 16px;        /*햄버거 메뉴 원위치*/
+    }
+
+    /* .show-menu 하면, .nav-list 보이게 */
+    /* .show-menu하면, .nav-toggle 의 모양 X자로 */
+
+    .show-menu{
+        height: 171px;
+    }
 }
