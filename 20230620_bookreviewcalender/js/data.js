@@ -80,3 +80,11 @@ let reviews = [
         "thoughts": "좋은 말. 지키기는 어려운",
     },
 ]
+
+// let entertainer = ["아이유", "이석훈", "zbi"]
+// console.log(entertainer[2])
+// let person = {"group" : "zbi", "name":"장하오", "country":"china"}
+// console.log(person["name"])     //장하오 출력
+// console.log(person.name)
+
+// console.log(books[3].author)     //유연 출력
