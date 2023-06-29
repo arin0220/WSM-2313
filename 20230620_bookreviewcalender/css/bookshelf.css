@@ -1,0 +1,26 @@
+.bookshelf{
+    /* margin-top: 144px; */
+    margin-top: calc(44px + 100px);  /* 연산자는 양 옆에 띄어쓰기 */
+    display: flex; /* 수평 배열 */
+    gap: 80px;      /* colume-gap 80px; row-gap:80px; */
+    flex-wrap: wrap;    /* 길면 내려쓰자 */
+    justify-content: center;    /* 메인측(수평) 가운데로 */
+}
+.row-container {
+    display: flex;  /* 수평 배열 */
+    column-gap: 80px;
+    align-items: flex-end;  /* 교차죽 밑에 정렬하자 */
+}
+
+.book-item > img {
+    width: 150px;
+    /* box-shadow: p1 p2 p3 p4;  x y 번짐정도 색상 */
+    box-shadow: 0 16px 32px #ddd;
+    transition: all 0.2s;
+}
+
+.book-item > img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 48px #e1e1e1;
+    
+}
