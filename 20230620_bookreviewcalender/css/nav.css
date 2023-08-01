@@ -33,6 +33,7 @@ header {
     top: 0;
     left: 0;    /*오른쪽 끝가지*/
     right: 0;   /*왼쪽 끝가지 늘리기*/
+    z-index: 10; /*책에 마우스 올렸을 때 가려지는 문제 해결 */
 }
 nav {
     height: 44px;
