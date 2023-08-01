@@ -15,14 +15,14 @@
     align-items: flex-end;  /* 교차죽 밑에 정렬하자 */
 }
 
-.book-item > img {
+.book-item img {
     width: 150px;
     /* box-shadow: p1 p2 p3 p4;  x y 번짐정도 색상 */
     box-shadow: 0 16px 32px #ddd;
     transition: all 0.2s;
 }
 
-.book-item > img:hover {
+.book-item img:hover {
     transform: translateY(-4px);
     box-shadow: 0 24px 48px #e1e1e1;
     
