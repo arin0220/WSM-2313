@@ -21,6 +21,12 @@ main {
     border-radius: 10px;
     padding: 10px;
 }
+.left,
+.month,
+.right {
+    cursor: pointer;
+}
+
 .dates.container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
